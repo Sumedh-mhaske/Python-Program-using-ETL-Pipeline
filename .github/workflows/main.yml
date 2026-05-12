@@ -14,3 +14,6 @@ jobs:
 
       - name: Python version
         run: python --version
+
+      - name: Run python program
+        run: python extract_data.py
