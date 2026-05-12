@@ -1,0 +1,16 @@
+name: run python program with dependencies
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  extract-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Python version
+        run: python --version
